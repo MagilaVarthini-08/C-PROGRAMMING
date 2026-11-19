@@ -1,0 +1,172 @@
+1) Equal or not equal pgm
+include<stdio.h>
+int main()
+{  
+    int a,b;
+    scanf("%d%d",&a,&b);
+    if(a==b)
+    printf("Equal");
+    else
+    printf("Not equal");
+}    
+
+2) p or N pgm
+  #include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    if(a>0)
+    printf("Number is %d:Positive",a);
+    else if(a<0)
+    printf("Number is %d:Negative",a);
+    else
+    printf("Number is 0");
+    
+}
+
+3) greater of 2 num pgm
+  #include<stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+    if(a>b)
+    printf("Greater is = %d",a);
+    else
+    printf("Greater is = %d",b);
+}    
+
+4) Greater of 3 num
+  #include<stdio.h>
+int main()
+ {
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    if((a>b)&&(a>c))
+    printf("GREATER IS = %d",a);
+    else if(b>c)
+    printf("GREATER IS = %d",b);
+    else
+    printf("GREATER IS = %d",c);
+}    
+
+5) Odd or even
+  #include <stdio.h>
+int main()
+{
+    int a;
+    scanf("%d", &a);
+    if(a%2==0)
+    printf("The given number %d is even:",a);
+    else
+    printf("The given number %d is odd:",a);
+}
+
+6) leap yr or not leap yr
+  #include <stdio.h>
+int main()
+{
+    int y;
+    scanf("%d",&y);
+    if(y%400==0||(y%4==0&&y%100!=0))
+    printf("Leap year");
+    else
+    printf("Not a leap year");
+}
+
+7) N natural numbers
+  #include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    for(int i=1;i<n;i++)
+    printf("%d\n",i);
+}
+8) Sum of n numbers
+  #include <stdio.h>
+int main()
+{
+    int a,b,sum=0;
+    scanf("%d%d",&a,&b);
+    for(int i=a;i<=b;i++)
+    {
+        sum=sum+i;
+        printf("The sum is=%d\n",sum);
+    }    
+}
+9) Factorls of n
+  #include<stdio.h>
+int main()
+{
+    int i,n;
+    scanf("%d",&n);
+    for(i=1;i<=n/2;i++)
+    {
+        if(n%i==0)
+        printf("%d",i);
+    }
+    printf("%d",n);
+    }
+
+10) Multipilication pgm
+  #include <stdio.h>
+int main()
+{
+    int a,m;
+    scanf("%d%d",&a,&m);
+    for(int i=1;i<=m;i++)
+    printf("%d*%d = %d\n",i,a,i*a);
+}
+
+11) Prime or not prime numbers
+  #include <stdio.h>
+int main()
+{
+    int n,i,c=0;
+    scanf("%d",&n);//22
+    if(n==1)
+    {
+        printf("Neither prime nor composite number");
+        return 0;
+    }
+    for(int i=2;i<n/2;i++)
+    {
+        if(n%i==0)
+        {
+            c++;
+            printf("Not a prime number");
+            break;
+        }
+    }
+    if(c==0)
+    printf("Number is a prime number");
+}    
+12) Find nuber of digits
+  #include <stdio.h>
+int main()
+{
+   int n,c=0;
+   scanf("%d",&n);//256
+   while(n!=0)//0!-0
+   {
+       n=n/10;//2/10=10
+       c++;//c=3
+   }
+   printf("%d",c);
+}
+13) Sum of digits
+  #include <stdio.h>
+int main()
+{
+    int n,sum=0,d;
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        d=n%10;
+        sum=sum+d;
+        n=n/10;
+    }
+    printf("%d",sum);
+}
