@@ -1,0 +1,86 @@
+1. Integer Input and Output
+#include <stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    printf("%d",a);
+}
+
+2. Simple If-Else Statement
+#include<stdio.h>
+int main()
+{
+    if(1)
+    printf("hi");
+    else
+    printf("hello");
+}
+3. If-Else with NOT (!) Operator
+#include<stdio.h>
+int main()
+{
+    int a=1;
+    if(!a)
+    printf("hi");
+    else
+    printf("hello");
+}
+
+4. If-Else with Relational Operator (>)
+#include<stdio.h>
+int main()
+{
+    int a=1;
+    if(a>0)
+    {
+        printf("hi\n");
+        printf("Thanks");
+    }
+    else
+    printf("hello");
+}
+5. Float Input and Output
+#include <stdio.h>
+int main()
+{
+    float a;
+    scanf("%f",&a);
+    printf("%.2f",a);
+}
+6. Character Input and Output
+#include <stdio.h>
+int main()
+{
+    char a;
+    scanf("%c",&a);
+    printf("%c",a);
+}
+7. Printing a String
+#include<stdio.h>
+int main()
+{
+    printf("Avi,Priya");
+}
+8. Printing Double Quotes Using Escape Character
+#include<stdio.h>
+int main()
+{
+    printf("slow and \"steady\" wins the race");
+}
+
+
+9. Printing Backslash and Newline
+#include<stdio.h>
+int main()
+{
+    printf("\\n");
+}
+
+
+10. Printing Percentage Symbol
+#include<stdio.h>
+int main()
+{
+    printf("%%");
+}
